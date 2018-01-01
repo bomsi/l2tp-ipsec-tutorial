@@ -29,9 +29,38 @@ IP Pool example:
 
 ![IP Pool](ip-pool.png)
 
+Make sure that the VPN client IP address range does not overlap with an existing range.
+
+![PPP Secret - Adding clients](ppp-secret.png)
+
+Add client accounts.
+
 ## IPSec setup
 
-TODO
+In the ``IP`` menu select ``IPSec``. Create new peer as shown:
+
+![IPSec Peer - General tab](ipsec-peer_general.png)
+
+![IPSec Peer - Advanced tab](ipsec-peer_advanced.png)
+
+![IPSec Peer - Encryption tab](ipsec-peer_encryption.png)
+
+Set up IPSec proposal.
+
+![IPSec Proposal](ipsec-proposal.png)
+
+## Firewall
+
+To allow outside connections accept UDP on ports 500, 1701 and 4500.
+
+![Firewall rules](firewall_input.png)
+
+If you would like to apply firewall rules per user, you can set up bindings.
+
+![L2TP Binding](l2tp-binding.png)
+
+![Firewall rules - per binding](firewall_forward.png)
+
 
 ## FAQ
 
